@@ -221,6 +221,7 @@ output application/json
 				<email:content ><![CDATA[#["Account number: " ++ vars.accountNumber as String ++ ", Bank Name: " ++ vars.bank as string]]]></email:content>
 			</email:body>
 		</email:send>
-		<logger level="INFO" doc:name="Email end Logger" doc:id="66f8100a-56bf-417d-98aa-86bcd882e1cd" message="-------------- email flow logger end -------------"/>
+		<logger level="INFO" doc:name="Email end Logger" doc:id="66f8100a-56bf-417d-98aa-86bcd882e1cd" message="-------------- email flow logger end updatelog-------------"/>
+		<set-payload value="test payload" doc:name="Set Payload" doc:id="994ed133-ff0c-41e5-b6b6-6ae9da3eba75" />
 	</flow>
 </mule>
